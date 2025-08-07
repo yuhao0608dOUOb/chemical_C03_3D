@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <title>3D Cyclopropane 模型展示</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      model-viewer {
+        width: 90vw;
+        height: 90vh;
+        background-color: #ffffff;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <model-viewer
+      src="https://raw.githubusercontent.com/yuhao0608dOUOb/chemical_3D/main/C01_cyclopropane.glb"
+      alt="Cyclopropane 3D 分子模型"
+      auto-rotate
+      camera-controls
+      shadow-intensity="1"
+      exposure="1"
+      environment-image="neutral"
+      ar
+      ar-modes="webxr scene-viewer quick-look"
+    >
+    </model-viewer>
+  </body>
+</html>
+
+
+
